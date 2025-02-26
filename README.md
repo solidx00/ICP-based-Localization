@@ -13,6 +13,15 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 
 ✅ RViz support for visualization.
 
+### Project Architecture
+| File | Description
+| :---:   | :---: | 
+| localizer_node.cpp | Nodo ROS principale che gestisce le comunicazioni.  
+| localizer2d.cpp | Implementa l'algoritmo ICP per la localizzazione. 
+| map.h/.cpp | 	Gestione della mappa di occupazione. 
+| ros_bridge.h/.cpp | Converte i dati tra ROS e Eigen.
+| icp/eigen_icp_2d.h/.cpp | Algoritmo ICP per allineare il laser scan con la mappa.
+
 ### Dependencies
 - Per eseguire il progetto, assicurati di avere installati:
 - ROS (Noetic/Melodic/Foxy per ROS2)
