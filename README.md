@@ -10,13 +10,18 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 ✅ ROS Publisher/Subscriber for real-time communication.
 ✅ RViz support for visualization.
 
-### Dipendenze
-Per eseguire il progetto, assicurati di avere installati:
+### Dependencies
+- Per eseguire il progetto, assicurati di avere installati:
+- ROS (Noetic/Melodic/Foxy per ROS2)
+- Eigen (Libreria per algebra lineare)
+- OpenCV (Per la gestione delle mappe)
+- PCL (Point Cloud Library) (Facoltativo per visualizzazione avanzata)
+
+### Installation of dependencies
 ```bash
-ROS (Noetic/Melodic/Foxy per ROS2)
-Eigen (Libreria per algebra lineare)
-OpenCV (Per la gestione delle mappe)
-PCL (Point Cloud Library) (Facoltativo per visualizzazione avanzata)
+sudo apt update
+sudo apt install ros-noetic-tf2-ros ros-noetic-nav-msgs ros-noetic-sensor-msgs
+sudo apt install libeigen3-dev libopencv-dev
 ```
 
 ### Launch RViz for visualization
