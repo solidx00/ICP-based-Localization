@@ -1,7 +1,7 @@
 # ICP-based Localization
 
 📌 Localizer2D - Robot Localization using ICP in ROS
-🔹 Overview
+
 Localizer2D is a robot localization system based on ICP (Iterative Closest Point) developed in ROS (Robot Operating System).
 It uses laser scanner data and a map to estimate the robot's position in a probabilistic way.
 
