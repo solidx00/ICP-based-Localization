@@ -22,7 +22,7 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 | ros_bridge.h/.cpp | Converte i dati tra ROS e Eigen.
 | icp/eigen_icp_2d.h/.cpp | Algoritmo ICP per allineare il laser scan con la mappa.
 
-### Dependencies
+### 📌 Dependencies
 - Per eseguire il progetto, assicurati di avere installati:
 - ROS (Noetic/Melodic/Foxy per ROS2)
 - Eigen (Libreria per algebra lineare)
