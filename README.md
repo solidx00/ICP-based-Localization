@@ -1,6 +1,6 @@
-# ICP-based Localization
+# 📌 Localizer2D - Robot Localization using ICP in ROS
 
-📌 Localizer2D - Robot Localization using ICP in ROS
+###🔹 Overview
 
 Localizer2D is a robot localization system based on ICP (Iterative Closest Point) developed in ROS (Robot Operating System).
 It uses laser scanner data and a map to estimate the robot's position in a probabilistic way.
@@ -22,7 +22,7 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 | ros_bridge.h/.cpp | Converte i dati tra ROS e Eigen.
 | icp/eigen_icp_2d.h/.cpp | Algoritmo ICP per allineare il laser scan con la mappa.
 
-### 📌 Dependencies
+###📌 Dependencies
 - Per eseguire il progetto, assicurati di avere installati:
 - ROS (Noetic/Melodic/Foxy per ROS2)
 - Eigen (Libreria per algebra lineare)
@@ -34,6 +34,13 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 sudo apt update
 sudo apt install ros-noetic-tf2-ros ros-noetic-nav-msgs ros-noetic-sensor-msgs
 sudo apt install libeigen3-dev libopencv-dev
+```
+
+### Compile the package
+```bash
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
 ```
 
 ### Launch RViz for visualization
