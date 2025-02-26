@@ -15,3 +15,11 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 roslaunch icp_localizer launchfile.launch
 ```
 
+### ROS Topics
+| Topic | Message Type    | 	Description 
+| :---:   | :---: | :---: | 
+| /map | nav_msgs/OccupancyGrid   | Environment map 
+| /initialpose | geometry_msgs/PoseWithCovarianceStamped   | Initial robot pose 
+| /base_scan | 	sensor_msgs/LaserScan   | Laser scanner data 
+| /odom_out | nav_msgs/Odometry   | Estimated robot pose 
+| /scan_out | sensor_msgs/LaserScan   | Transformed laser scan 
