@@ -10,6 +10,15 @@ It uses laser scanner data and a map to estimate the robot's position in a proba
 ✅ ROS Publisher/Subscriber for real-time communication.
 ✅ RViz support for visualization.
 
+### Dipendenze
+Per eseguire il progetto, assicurati di avere installati:
+```bash
+ROS (Noetic/Melodic/Foxy per ROS2)
+Eigen (Libreria per algebra lineare)
+OpenCV (Per la gestione delle mappe)
+PCL (Point Cloud Library) (Facoltativo per visualizzazione avanzata)
+```
+
 ### Launch RViz for visualization
 ```bash
 roslaunch icp_localizer launchfile.launch
